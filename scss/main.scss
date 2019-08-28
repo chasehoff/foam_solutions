@@ -12,14 +12,54 @@ img {
     padding: 0rem 3rem 0rem 3rem;
     font-size: 16px;
 }
+
 #crh-nav-styles ul .nav-item .nav-link:hover {
     border-bottom: 2px solid #0170BB;
+}
+.header-grid {
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+}
+.next, .prev {
+    margin-top: 5rem;
+    height: 32px;
+    width: 32px;
+}
+.prev {
+    float: right;
+}
+.next {
+    float: left;
 }
 #crh-index-header {
     background: gray url('../images/Group\ 43.png') center no-repeat;
     background-size: cover;
     padding-top: 12rem;
-    padding-bottom: 4rem;
+    padding-bottom: 1rem;
+    ol {
+        position: relative;
+        margin-top: 6rem;
+        display: block;
+        text-align: center;
+        li {
+            display: inline-block;
+            background-color: #bbbbbf;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            font-size: 0;
+            margin: .3rem;
+        }
+        .crh-carousel-active {
+            background-color: white;
+        }
+        
+    }
+}
+.next {
+    
+    right: 0;
+    left: 0;
 }
 #crh-index-header h4, #crh-index-header h2, #crh-index-header h3 {
     text-align: center;
@@ -28,9 +68,10 @@ img {
 #crh-index-header h3 {
     padding-bottom: 2rem;
 }
-#ind-header-btn {
+#crh-index-header article:nth-of-type(2) {
     display: block;
-    margin-left: 40%;
+    margin-right: auto;
+    margin-left: auto;
 }
 #ind-header-btn li {
     display: inline-block;
