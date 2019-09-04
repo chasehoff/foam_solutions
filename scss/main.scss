@@ -22,6 +22,9 @@ img {
 .header-grid {
     display: grid;
     grid-template-columns: 100px auto 100px;
+    article {
+        align-items: center;
+    }
 }
 .next, .prev {
     margin-top: 5rem;
