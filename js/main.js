@@ -1,3 +1,3 @@
 window.addEventListener('DOMContentLoaded', function () {
-    let myApp = Factory.getInstance();
+    let myApp = Application.getInstance();
 });
