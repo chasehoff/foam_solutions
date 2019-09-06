@@ -46,23 +46,23 @@
             <article class="col-sm-7">
                 <form name="contact" action="POST" data-netlify="true">
                     <p class="fname">
-                        <label for="fname">First Name*</label>
-                        <input type="text" name="firstname" value="" id="fname">
+                        <label for="fname">First Name:*</label>
+                        <input type="text" name="firstname" value="" id="fname" required>
                     </p>
                     <p class="lname">
-                        <label for="lname">Last Name (Optional)</label>
-                        <input type="text" name="lastname" value="" id="lname">
+                        <label for="lname">Last Name:*</label>
+                        <input type="text" name="lastname" value="" id="lname" required>
                     </p>
                     <p class="bussiness-email">
-                        <label for="bussiness_email">Business Email*</label>
-                        <input type="email" name="email" value="" id="bussiness-email">
+                        <label for="bussiness_email">Business Email:*</label>
+                        <input type="email" name="email" value="" id="bussiness-email" required>
                     </p>
                     <p class="company">
-                        <label for="company">Company (Optional)</label>
-                        <input type="email" name="companyname" value="" id="company">
+                        <label for="company">Company:</label>
+                        <input type="text" name="companyname" value="" id="company">
                     </p>
                     <p class="form-message">
-                        <label for="message">Your message to us (Optional)</label>
+                        <label for="message">Your message to us:</label>
                         <textarea type="text" name="opt_message" value="Type here..." id="message">Type your message here...</textarea>
                     </p>
                     <div class="form-spam" data-netlify-recaptcha="true"></div>
