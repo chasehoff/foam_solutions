@@ -44,39 +44,33 @@
             our industry. Please do not hesitate to fill out the form below and we will get back to you in 1 to 2
             business days!</p>
             <article class="col-sm-7">
-                <form data-netlify="true">
-                    <div class="fname">
-                        <p>
-                            <label for="fname">First Name*</label>
-                            <input type="text" name="firstname" value="" id="fname">
-                        </p>
-                    </div>
-                    <div class="lname">
-                        <p>
-                            <label for="lname">Last Name (Optional)</label>
-                            <input type="text" name="lastname" value="" id="lname">
-                        </p>
-                    </div>
-                    <div class="bussiness-email">
-                        <p>
-                            <label for="bussiness_email">Business Email*</label>
-                            <input type="email" name="email" value="" id="bussiness-email">
-                        </p>
-                    </div>
-                    <div class="company">
-                        <p>
-                            <label for="company">Company (Optional)</label>
-                            <input type="email" name="companyname" value="" id="company">
-                        </p>
-                    </div>
-                    <div class="form-message">
-                        <p>
-                            <label for="message">Your message to us (Optional)</label>
-                            <textarea type="text" name="opt_message" value="Type here..." id="message">Type your message here...</textarea>
-                        </p>
-                    </div>
+                <form name="contact" action="POST" data-netlify="true">
+                    <p class="fname">
+                        <label for="fname">First Name*</label>
+                        <input type="text" name="firstname" value="" id="fname">
+                    </p>
+                    <p class="lname">
+                        <label for="lname">Last Name (Optional)</label>
+                        <input type="text" name="lastname" value="" id="lname">
+                    </p>
+                    <p class="bussiness-email">
+                        <label for="bussiness_email">Business Email*</label>
+                        <input type="email" name="email" value="" id="bussiness-email">
+                    </p>
+                    <p class="company">
+                        <label for="company">Company (Optional)</label>
+                        <input type="email" name="companyname" value="" id="company">
+                    </p>
+                    <p class="form-message">
+                        <label for="message">Your message to us (Optional)</label>
+                        <textarea type="text" name="opt_message" value="Type here..." id="message">Type your message here...</textarea>
+                    </p>
+                    <div class="form-spam" data-netlify-recaptcha="true"></div>
+                    <p class="form-button">
+                        <button type="submit">Submit</button>
+                    </p>
                 </form>
-                <button>Submit</button>
+                
             </article>
             <article class="col-sm-5">
                 <img src="images/shop_location.png" alt="Our shop location! Come visit us!">

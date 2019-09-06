@@ -335,7 +335,7 @@ form input {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-column-gap: 1.5rem;
-  grid-template-areas: "firstname lastname" "email email" "company company" "message message"; }
+  grid-template-areas: "firstname lastname" "email email" "company company" "message message" "spam spam" "button button"; }
   #crh-contact-us form .fname {
     grid-area: firstname; }
   #crh-contact-us form .lname {
@@ -346,6 +346,10 @@ form input {
     grid-area: company; }
   #crh-contact-us form .form-message {
     grid-area: message; }
+  #crh-contact-us form .form-button {
+    grid-area: button; }
+  #crh-contact-us form .form-spam {
+    grid-area: spam; }
   #crh-contact-us form label {
     display: block;
     margin-bottom: 0px;
