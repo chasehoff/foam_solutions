@@ -77,7 +77,12 @@ img {
   padding-bottom: 2rem; }
 
 #ind-header-btn li {
-  display: inline-block; }
+  display: inline-block;
+  margin: .5rem; }
+  @media screen and (max-width: 600px) {
+    #ind-header-btn li a {
+      display: block;
+      margin: 0 !important; } }
 
 #ind-header-btn li:nth-of-type(1) a {
   margin-right: 5rem;
