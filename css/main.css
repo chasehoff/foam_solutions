@@ -89,7 +89,16 @@ img {
   background-color: lightgray; }
 
 #ind-about-us {
-  padding-top: 2rem; }
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom: 2rem; }
+  @media screen and (max-width: 1000px) {
+    #ind-about-us {
+      display: grid;
+      grid-template-columns: 1fr 1fr; }
+      #ind-about-us img {
+        display: none; } }
 
 #column-one h3, #column-one p:nth-of-type(1) {
   text-transform: uppercase;
@@ -304,7 +313,19 @@ footer article:nth-of-type(2) ul {
       transform: scale(1.1); }
 
 .code-section iframe {
-  width: 100%; }
+  width: 100%;
+  padding-bottom: 1.5rem; }
+
+.code-section h3 {
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto; }
+
+.code-section p {
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 1.5rem; }
 
 .active-nfpa {
   background-color: lightgray; }
