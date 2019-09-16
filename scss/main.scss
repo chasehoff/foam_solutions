@@ -18,6 +18,15 @@ img {
 
 #crh-nav-styles ul .nav-item .nav-link:hover {
     border-bottom: 2px solid #0170BB;
+    li:nth-of-type(4){
+        display: none;
+        img {
+            display: none;
+        }
+    }
+    @media screen and (max-width: 400px) {
+
+    }
 }
 .header-grid {
     display: grid;
@@ -63,9 +72,16 @@ img {
         }
         
     }
+    @media screen and (max-width: 550px){
+        .next, .prev, ol {
+            display: none;
+        }
+        h4 {
+            font-size: .9rem;
+        }
+    }
 }
 .next {
-    
     right: 0;
     left: 0;
 }
@@ -105,8 +121,33 @@ img {
     @media screen and (max-width: 1000px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        img {
+        article:nth-of-type(2) {
             display: none;
+        }
+        
+    }
+    @media screen and (max-width: 550px){
+        grid-template-columns: 1fr;
+        article {
+            padding: 1rem;
+        }
+        article:nth-of-type(1) {
+            padding-top: 1rem !important;
+            margin-top: 1rem !important;
+            h3 {
+                display: block;
+                text-align: center;
+            }
+            p {
+                text-align: center;
+            }
+            a {
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+                width: 30%;
+                text-align: center;
+            }
         }
     }
 }
@@ -145,6 +186,15 @@ img {
 #testimonials {
     background: #0170BB url('../images/Group\ 46.png') center no-repeat;
     background-size: cover;
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2rem;
+        @media screen and (max-width: 800px){
+            grid-template-columns: 1fr;
+            grid-row-gap: 2rem;
+        }
+    }
 }
 #testimonials h2 {
     text-align: center;
@@ -171,6 +221,29 @@ img {
 }
 #locations {
     padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+    article {
+        margin-top: 2rem;
+        display: block;
+        img {
+            margin: 0 !important;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+    
+    @media screen and (max-width: 800px) {
+        grid-template-columns: 1fr;
+        grid-row-gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        p {
+            text-align: center;
+        }
+    }
 }
 #locations h2 {
     padding-top: 2rem;
@@ -442,4 +515,12 @@ form input {
         margin-top: 3rem;
         display: block;
     }
+}
+.crh-iframe {
+    iframe {
+        margin-top: 6rem;
+        width: 100%;
+        height: 800px;
+    }
+    
 }
