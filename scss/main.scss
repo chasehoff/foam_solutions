@@ -620,6 +620,13 @@ form input {
         }
     }
 }
-@media screen and (max-width: 600px) {
-
+.patent-data {
+    display: block;
+    text-align: center;
+    background-color: #0170BB;
+    padding: .3rem;
+    h3 {
+        font-size: 14px;
+        color: white;
+    }
 }

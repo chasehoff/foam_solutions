@@ -530,3 +530,12 @@ form input {
     margin-left: auto; }
   #crh-contact-us article:last-of-type ul {
     margin-left: 26%; } }
+
+.patent-data {
+  display: block;
+  text-align: center;
+  background-color: #0170BB;
+  padding: .3rem; }
+  .patent-data h3 {
+    font-size: 14px;
+    color: white; }
