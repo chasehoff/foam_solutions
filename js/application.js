@@ -14,11 +14,6 @@ class Application{
             this.index = 0;
         }
         this.bubbles[this.index].classList.add('crh-carousel-active');
-        console.log(this.index);
-        $(".next").click(function(){
-            console.log('this is a test');
-            $("#crh-index-header").css('background-image', 'url(' + this.images[this.index] + ')').fadeIn();
-        })
         this.setImage(this.index);
     }
     prev(){
