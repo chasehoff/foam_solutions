@@ -91,13 +91,15 @@ nav {
   background-color: #0170BB;
   border: 2px solid white;
   border-radius: 5px;
-  padding: .5rem 1rem .5rem 1rem; }
+  padding: .5rem 1rem .5rem 1rem;
+  transition: all ease-in-out 0.4s; }
 
 #ind-header-btn li:nth-of-type(2) a {
   color: white;
   border: 2px solid white;
   border-radius: 5px;
-  padding: .5rem 1rem .5rem 1rem; }
+  padding: .5rem 1rem .5rem 1rem;
+  transition: all ease-in-out 0.3s; }
 
 #ind-header-btn li:nth-of-type(1) a:hover, #ind-header-btn li:nth-of-type(2) a:hover {
   text-decoration: none;
@@ -146,7 +148,8 @@ nav {
   color: white;
   background-color: #0170BB;
   padding: .4rem .8rem .4rem .8rem;
-  margin-left: 2rem; }
+  margin-left: 2rem;
+  transition: all ease-in-out 0.3s; }
 
 #column-one a:hover {
   background-color: lightgray; }
@@ -223,7 +226,10 @@ nav {
       text-decoration: none;
       background-color: #0170BB;
       color: white;
-      padding: .4rem .8rem .4rem .8rem; }
+      padding: .4rem .8rem .4rem .8rem;
+      transition: all ease-in-out 0.3s; }
+      #locations article a:hover {
+        background-color: #bbbbbf; }
   @media screen and (max-width: 800px) {
     #locations {
       grid-template-columns: 1fr;
@@ -247,16 +253,26 @@ nav {
     background-color: lightgray; }
 
 footer {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 1rem;
   background-color: #0170BB;
   color: white;
   font-size: .8rem; }
-
-footer p {
-  padding-top: 1rem; }
-
-footer article:nth-of-type(2) ul {
-  padding-top: .5rem;
-  float: right; }
+  footer .patents {
+    text-align: center; }
+  footer .footer-info {
+    text-align: right; }
+  footer p {
+    text-align: left; }
+  @media screen and (max-width: 1200px) {
+    footer {
+      grid-template-columns: 1fr;
+      grid-template-rows: 3; }
+      footer p, footer .footer-info, footer .patents {
+        text-align: center; } }
 
 #crh-about-styles {
   background: gray url("../images/Group 43.png") center no-repeat;
