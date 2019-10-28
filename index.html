@@ -15,7 +15,10 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="stylesheet" href="https://use.typekit.net/pwz5rec.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <link rel="manifest" href="/site.webmanifest">
+    
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142600398-3"></script>
     <script>
@@ -72,78 +75,128 @@
         </nav>
         <div class="header-grid">
             <article>
-                <p><img class="prev" src="images/prev.png" alt=""></p>
+                <div>
+                    <h4>Foam Proportioner Testing HEF, AR and AFFF Systems</h4>
+                    <div id="typed-strings">
+                        <h2>A Friendly Company</h2>
+                        <h3>A <span class="eco-green">Eco Friendly</span> Company<br>Doing <span class="eco-green">Eco Friendly</span> Testing!</h3>
+                    </div>
+                    <span id="typed" style="font-size: 3.5rem;"></span>
+                    <!-- Typed JS Implementation -->
+                    <script>
+                        var typed = new Typed('#typed', {
+                            stringsElement: '#typed-strings',
+                            backSpeed: 60,
+                            typeSpeed: 60
+                        });
+                    </script>
+                </div>
+                <div>
+                    <button>About Us</button>
+                </div>
             </article>
             <article>
-                <h4>Foam Proportioner Testing HEF, AR and AFFF Systems</h4>
-                <h2>An Eco Friendly Company</h2>
-                <h3>Doing Eco Friendly Testing</h3>
-                <ul id="ind-header-btn">
-                    <center>
-                        <li><a id="btn-about" href="about.html">About Us</a></li>
-                        <li><a id="btn-contact" href="contact.html">Contact Us</a></li>
-                    </center>
-                </ul>
+                <form action="">
+                    <h3>Contact Us</h3>
+                    <p>For a free quote! Insert your information below!</p>
+                    <p>
+                        <label for="name" class="sr-only">Name:*</label>
+                        <input type="text" name="firstname" id="fname" placeholder="Name" required>
+                    </p>
+                    <p>
+                        <label for="email" class="sr-only">Email:*</label>
+                        <input type="text" name="email" id="email" placeholder="Email" required>
+                    </p>
+                    <p>
+                        <label for="company" class="sr-only">Company:*</label>
+                        <input type="text" name="company" id="company" placeholder="Company">
+                    </p>
+                    <p>
+                        <textarea name="" id="" cols="35" rows="6" placeholder="Message here..."></textarea>
+                    </p>
+                    <button>Submit</button>
+                </form>
             </article>
-            <article>
-                <p><img class="next" src="images/next.png" alt=""></p>
-            </article>
-        </div>
-        <ol>
-            <li class="crh-carousel-circle">1</li>
-            <li class="crh-carousel-circle crh-carousel-active">2</li>
-            <li class="crh-carousel-circle">3</li>
-        </ol>
+        </div>  
     </div>
 </header>
-<section class="wrapper">
-    <div id="ind-about-us" class="container">
-        <article id="column-one">
-            <h3>About Our<br>Company</h3>
-            <p>-Working Since 2006</p>
-            <p>Our company offers the most cost effective, environmentally
-            friendly solution to your annual foam proportioner testing.</p>
-            <a href="about.html">Read More</a>
-        </article>
-        <article id="column-two">
-            <img src="images/thumbnail_Tank.jpg" alt="Example of a foam proportioner tank.">
-        </article>
-        <article id="column-three">
-            <h3>Benefits Using<br>Our Process</h3>
-            <ul>
-                <li>Saves on cost of using foam concentrate.</li>
-                <li>Water only testing which has no environment impacts, clean-up concerns, and containment/disposal costs.</li>
-                <li>Ability to allow system to operate for longer periods of time while only flowing water.</li>
-                <li>Ability to vary the system operating parameters over a wide range of flow rates.</li>
-                <li>Simple set-up of equipment and ease of conducting tests.</li>
-                <li>Meeting manufacturer's requirements for flushing the system with water.</li>
-                <li>Overall reduction in risk of poor system performance.</li>
-            </ul>
-        </article>
+<section id="floater-bg" class="wrapper">
+    <div class="floater">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f5" fill-opacity="1" d="M0,32L34.3,58.7C68.6,85,137,139,206,170.7C274.3,203,343,213,411,213.3C480,213,549,203,617,186.7C685.7,171,754,149,823,138.7C891.4,128,960,128,1029,144C1097.1,160,1166,192,1234,176C1302.9,160,1371,96,1406,64L1440,32L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+        <div id="ind-about-us" class="container">
+            <article id="column-one">
+                <h3>About Our<br>Company</h3>
+                <p>-Working Since 2006</p>
+                <p>Our company offers the most cost effective, environmentally
+                friendly solution to your annual foam proportioner testing.</p>
+                <a href="about.html">Read More</a>
+            </article>
+            <article>
+                <div id="slider">
+                    <figure>
+                        <img src="images/frank-mckenna-127338-unsplash.jpg" alt>
+                    </figure>
+                </div>
+            </article>
+            <article id="column-three">
+                <h3>Benefits Using<br>Our Process</h3>
+                <ul>
+                    <li>Saves on cost of using foam concentrate.</li>
+                    <li>Water only testing which has no environment impacts, clean-up concerns, and containment/disposal costs.</li>
+                    <li>Ability to allow system to operate for longer periods of time while only flowing water.</li>
+                    <li>Ability to vary the system operating parameters over a wide range of flow rates.</li>
+                    <li>Simple set-up of equipment and ease of conducting tests.</li>
+                    <li>Meeting manufacturer's requirements for flushing the system with water.</li>
+                    <li>Overall reduction in risk of poor system performance.</li>
+                </ul>
+            </article>
+        </div>
     </div>
 </section>
 <section class="wrapper">
     <div id="testimonials" class="container-fluid">
-        <h2>&#9733 Testimonials &#9733</h2>
+        <h2>Customers say</h2>
+        <p>Questioning our services? Read what our past customers think about our services!</p>
         <section class="container">
             <article>
-                <h5>Rusty</h5>
-                <h6>Business Associate</h6>
-                <img src="images/iconfinder_quotes_2_143241.svg" alt="This reviewes are our client opinions on our services.">
-                <p class="update-this-text">"The Navistar Assembly Plant in Springfield, Ohio contracts Foam Solutions to test our fire protection systems. The
+                <p>"The Navistar Assembly Plant in Springfield, Ohio contracts Foam Solutions to test our fire protection systems. The
                 employees at Foam Solutions are experts in their field and keep our Assembly Plant, Paint Facility and Truck Specialty
-                Center in compliance with NFPA requirements in a cost effective and environmentally friendly way. We enjoy working with
+                Center in...<span class="sr-only">compliance with NFPA requirements in a cost effective and environmentally friendly way. We enjoy working with
                 these knowledgeable professionals and trust them to ensure our foam proportioning system is performing correctly each
-                year."</p>
+                year."</span></p>
+                <div class="testimonial-personel">
+                    <img src="images/iconfinder_quotes_2_143241.svg" alt="This reviewes are our client opinions on our services.">
+                    <div class="title">
+                        <h5>Rusty</h5>
+                        <h6>Business Associate</h6>
+                    </div>
+                </div>
             </article>
             <article>
-                <h5>Steven Baldwin</h5>
-                <h6>Business Owner</h6>
-                <img src="images/iconfinder_quotes_2_143241.svg" alt="This reviewes are our client opinions on our services.">
-                <p class="update-this-text">"Foam solutions made it extremely easy to book an appointment
+                <p>"Foam solutions made it extremely easy to book an appointment
                     to make sure we where compliant. They went above and beyond in fixing all of the issues
                     we had, and made sure we knew how to stay compliant!"
                 </p>
+                <div class="testimonial-personel">
+                    <img src="images/iconfinder_quotes_2_143241.svg" alt="This reviewes are our client opinions on our services.">
+                    <div class="title">
+                            <h5>Steven Baldwin</h5>
+                            <h6>Business Owner</h6>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <p>"Foam solutions made it extremely easy to book an appointment
+                    to make sure we where compliant. They went above and beyond in fixing all of the issues
+                    we had, and made sure we knew how to stay compliant!"
+                </p>
+                <div class="testimonial-personel">
+                    <img src="images/iconfinder_quotes_2_143241.svg" alt="This reviewes are our client opinions on our services.">
+                    <div class="title">
+                            <h5>Steven Baldwin</h5>
+                            <h6>Business Owner</h6>
+                    </div>
+                </div>
             </article>
         </section>
     </div>
@@ -182,7 +235,5 @@
         </ul>
     </article>
 </footer>
-<script src="js/application.js"></script>
-<script src="js/main.js"></script>
 </body>
 </html>
