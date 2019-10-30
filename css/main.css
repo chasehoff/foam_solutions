@@ -23,7 +23,7 @@ h4 {
   font-style: normal;
   font-size: 2.4rem; }
 
-p, li {
+p, li, button, a {
   font-size: 1.4rem; }
 
 img {
@@ -80,6 +80,9 @@ nav {
       @media screen and (max-width: 1093px) {
         .header-grid article:nth-of-type(1) button {
           top: 15rem; } }
+      @media screen and (max-width: 300px) {
+        .header-grid article:nth-of-type(1) button {
+          top: 20rem; } }
   .header-grid article:nth-of-type(2) form {
     width: 30rem;
     background-color: white;
@@ -108,7 +111,7 @@ nav {
       padding: .3rem 1.5rem .3rem 1.5rem;
       background-color: #65c981;
       font-size: 1.8rem; }
-  @media screen and (max-width: 600px) {
+  @media screen and (min-width: 600px) {
     .header-grid {
       grid-template-columns: 1fr; }
       .header-grid article {
@@ -210,7 +213,8 @@ nav {
   color: grey; }
 
 #column-three ul {
-  padding-left: 3rem; }
+  padding-left: 3rem;
+  margin-left: 3rem; }
 
 #column-three ul li {
   list-style-type: circle !important; }
@@ -716,7 +720,8 @@ div#slider {
   overflow: hidden;
   border-right: 4px solid #0170BB;
   border-left: 4px solid #0170BB;
-  margin-top: 5rem; }
+  margin-top: 7rem;
+  max-height: 23rem; }
 
 div#slider figure img {
   width: 20%;

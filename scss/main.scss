@@ -25,7 +25,7 @@ h4 {
     font-style: normal;
     font-size: 2.4rem;
 }
-p, li {
+p, li, button, a {
     font-size: 1.4rem;
 }
 img {
@@ -90,6 +90,9 @@ nav {
             @media screen and (max-width: 1093px){
                 top: 15rem;
             }
+            @media screen and (max-width: 300px){
+                top:20rem;
+            }
         }
         
     }
@@ -129,7 +132,7 @@ nav {
             }
         }
     }
-    @media screen and (max-width: 600px) {
+    @media screen and (min-width: 600px) {
         grid-template-columns: 1fr;
         article {
             padding: 1rem;
@@ -245,6 +248,7 @@ nav {
 }
 #column-three ul {
     padding-left: 3rem;
+    margin-left: 3rem;
 }
 #column-three ul li {
     list-style-type: circle !important;
@@ -825,7 +829,8 @@ div#slider {
     overflow: hidden;
     border-right: 4px solid $mainBlue;
     border-left: 4px solid $mainBlue;
-    margin-top: 5rem;
+    margin-top: 7rem;
+    max-height: 23rem;
 }
 div#slider figure img { width: 20%; float: left; }
 div#slider figure { 
