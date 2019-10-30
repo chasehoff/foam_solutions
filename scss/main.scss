@@ -79,7 +79,8 @@ nav {
         padding-top: 12rem;
         display: grid;
         grid-template-rows: 60px 100px;
-        button {
+        a {
+            position: relative;
             background-color: transparent;
             padding: .5rem 2rem .5rem 2rem;
             border: 2px solid $ecoGreen;
@@ -88,7 +89,7 @@ nav {
             font-size: 1.4rem;
             top: 10rem;
             @media screen and (max-width: 1093px){
-                top: 15rem;
+                margin-top: 10rem;
             }
         }
         

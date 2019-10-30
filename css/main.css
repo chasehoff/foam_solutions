@@ -69,7 +69,8 @@ nav {
     padding-top: 12rem;
     display: grid;
     grid-template-rows: 60px 100px; }
-    .header-grid article:nth-of-type(1) button {
+    .header-grid article:nth-of-type(1) a {
+      position: relative;
       background-color: transparent;
       padding: .5rem 2rem .5rem 2rem;
       border: 2px solid #65c981;
@@ -78,8 +79,8 @@ nav {
       font-size: 1.4rem;
       top: 10rem; }
       @media screen and (max-width: 1093px) {
-        .header-grid article:nth-of-type(1) button {
-          top: 15rem; } }
+        .header-grid article:nth-of-type(1) a {
+          margin-top: 10rem; } }
   .header-grid article:nth-of-type(2) form {
     width: 30rem;
     background-color: white;
