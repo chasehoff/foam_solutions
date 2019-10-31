@@ -80,7 +80,8 @@ nav {
       top: 10rem; }
       @media screen and (max-width: 1093px) {
         .header-grid article:nth-of-type(1) a {
-          margin-top: 10rem; } }
+          margin-top: 10rem;
+          top: 20rem; } }
   .header-grid article:nth-of-type(2) form {
     width: 30rem;
     background-color: white;
@@ -745,3 +746,6 @@ div#slider figure {
   -webkit-animation: blink 0.7s infinite;
   -moz-animation: blink 0.7s infinite;
   animation: blink 0.7s infinite; }
+
+.noty_body {
+  font-size: 1.4rem; }

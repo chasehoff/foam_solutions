@@ -90,6 +90,7 @@ nav {
             top: 10rem;
             @media screen and (max-width: 1093px){
                 margin-top: 10rem;
+                top: 20rem;
             }
         }
         
@@ -851,4 +852,7 @@ div#slider figure {
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
+}
+.noty_body {
+    font-size: 1.4rem;
 }
