@@ -549,7 +549,12 @@ form input {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-column-gap: 1.5rem;
-  grid-template-areas: "firstname lastname" "email email" "company company" "message message" "spam spam" "button button"; }
+  grid-template-areas: "firstname lastname"
+ "email email"
+ "company company"
+ "message message"
+ "spam spam"
+ "button button"; }
   #crh-contact-us form .fname {
     grid-area: firstname; }
   #crh-contact-us form .lname {
@@ -749,3 +754,19 @@ div#slider figure {
 
 .noty_body {
   font-size: 1.4rem; }
+
+.partner h1 {
+  color: grey;
+  text-align: center;
+}
+
+.partner h4 {
+  text-align: center;
+  color: darkgrey;
+  margin-bottom: 3rem;
+}
+
+.partner-link {
+  font-size: inherit;
+  color: lightblue;
+}
